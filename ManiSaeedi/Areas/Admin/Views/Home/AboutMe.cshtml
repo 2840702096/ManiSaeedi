@@ -1,0 +1,196 @@
+﻿@model AboutMeViewModel
+
+@section Top{
+    <link rel="icon" href="/Admin/images/dashboard/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Admin/images/dashboard/favicon.png" type="image/x-icon">
+
+    <title>مالتی کارت -قالب</title>
+
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/fontawesome.css">
+
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/flag-icon.css">
+
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/icofont.css">
+
+    <!-- Prism css-->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/prism.css">
+
+    <!-- Chartist css -->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/chartist.css">
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/bootstrap.css">
+
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="/Admin/css/admin.css">
+}
+
+<div class="page-body">
+
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="page-header-left">
+                        <h3>
+                            در باره ی من
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ol class="breadcrumb pull-right">
+                        <li class="breadcrumb-item"><a href="/Admin/Home"><i data-feather="home"></i></a></li>
+                        <li class="breadcrumb-item">ادمین</li>
+                        <li class="breadcrumb-item active">
+                            در باره ی من
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row product-adding">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>اطلاعات من</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="digital-add needs-validation">
+                            <form asp-action="AboutMe" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0"><span>*</span>عنوان</label>
+                                    <input asp-for="Title" class="form-control" type="text">
+                                    <span class="text-danger" asp-validation-for="Title"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0"><span>*</span>مشتریان خوشحال</label>
+                                    <input asp-for="HappyClients" class="form-control" type="number">
+                                    <span class="text-danger" asp-validation-for="HappyClients"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0"><span>*</span>فنجان قهوه</label>
+                                    <input asp-for="Coffee" class="form-control" type="number">
+                                    <span class="text-danger" asp-validation-for="Coffee"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0"><span>*</span>پروژه های تکمیل شده</label>
+                                    <input asp-for="CompeletedProjects" class="form-control" type="number">
+                                    <span class="text-danger" asp-validation-for="CompeletedProjects"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0"><span>*</span>متن</label>
+                                    <textarea asp-for="Body" class="form-control"></textarea>
+                                    <span class="text-danger" asp-validation-for="Body"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0"><span>*</span>وضعیت</label>
+                                    <div class="form-group">
+                                        <div class="form-group m-checkbox-inline mb-0 custom-radio-ml d-flex radio-animated m-t-10">
+                                            <label class="d-block" for="edo-ani3">
+                                                <input class="radio_animated" id="edo-ani3" type="radio"
+                                                       asp-for="IsActive" value="true">
+                                                فعال
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group m-checkbox-inline mb-0 custom-radio-ml d-flex radio-animated m-t-10">
+                                            <label class="d-block" for="edo-ani3">
+                                                <input class="radio_animated" id="edo-ani3" type="radio"
+                                                       asp-for="IsActive" value="false">
+                                                غیر فعال
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="currentImage" value="@Model.CurrentImage" />
+                                <div class="form-group mb-0">
+                                    <div class="product-buttons text-center">
+                                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+
+</div>
+
+@section Bottom{
+    <!-- latest jquery-->
+    <script src="/Admin/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="/Admin/js/popper.min.js"></script>
+    <script src="/Admin/js/bootstrap.js"></script>
+
+    <!-- feather icon js-->
+    <script src="/Admin/js/icons/feather-icon/feather.min.js"></script>
+    <script src="/Admin/js/icons/feather-icon/feather-icon.js"></script>
+
+    <!-- Sidebar jquery-->
+    <script src="/Admin/js/sidebar-menu.js"></script>
+
+    <!--chartist js-->
+    <script src="/Admin/js/chart/chartist/chartist.js"></script>
+
+    <!--chartjs js-->
+    <script src="/Admin/js/chart/chartjs/chart.min.js"></script>
+
+    <!-- lazyload js-->
+    <script src="/Admin/js/lazysizes.min.js"></script>
+
+    <!--copycode js-->
+    <script src="/Admin/js/prism/prism.min.js"></script>
+    <script src="/Admin/js/clipboard/clipboard.min.js"></script>
+    <script src="/Admin/js/custom-card/custom-card.js"></script>
+
+    <!--counter js-->
+    <script src="/Admin/js/counter/jquery.waypoints.min.js"></script>
+    <script src="/Admin/js/counter/jquery.counterup.min.js"></script>
+    <script src="/Admin/js/counter/counter-custom.js"></script>
+
+    <!--peity chart js-->
+    <script src="/Admin/js/chart/peity-chart/peity.jquery.js"></script>
+
+    <!--sparkline chart js-->
+    <script src="/Admin/js/chart/sparkline/sparkline.js"></script>
+
+    <!--Customizer admin-->
+    <script src="/Admin/js/admin-customizer.js"></script>
+
+    <!--dashboard custom js-->
+    <script src="/Admin/js/dashboard/default.js"></script>
+    <!--right sidebar js-->
+    <script src="/Admin/js/chat-menu.js"></script>
+    <!--height equal js-->
+    <script src="/Admin/js/height-equal.js"></script>
+    <!-- lazyload js-->
+    <script src="/Admin/js/lazysizes.min.js"></script>
+    <!--script admin-->
+    <script src="/Admin/js/admin-script.js"></script>
+
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace('Description', {
+            customConfig: '/Admin/js/Config.js'
+        });
+    </script>
+}

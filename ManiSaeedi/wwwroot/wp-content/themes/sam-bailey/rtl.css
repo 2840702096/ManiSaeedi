@@ -1,0 +1,213 @@
+body {
+  text-align: right;
+  font-family: IRANSans !important;
+}
+
+.ptf-fixed-socials {
+  left: unset;
+  right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ptf-fixed-socials {
+    left: unset;
+    right: 40px;
+  }
+}
+
+.ptf-fullpage-slider-progress-bar {
+  left: 90px;
+  right: unset;
+}
+
+@media only screen and (max-width: 1199px) {
+  .ptf-fullpage-slider-progress-bar {
+    left: 40px;
+    right: unset;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .ptf-fullpage-slider-progress-bar {
+    left: 15px;
+    right: unset;
+  }
+}
+
+.ptf-video-button a::after {
+  left: unset;
+  right: 0px;
+}
+
+.ptf-footer-copyright {
+  text-align: left;
+}
+
+.ptf-arrow-link {
+  left: unset;
+  right: 40px;
+  transform: scaleX(-1);
+}
+
+.ptf-progress-bar__title>span {
+  float: left;
+}
+
+.ptf-slider-controls .ptf-swiper-button-prev+.ptf-swiper-button-next {
+  margin-right: 40px;
+}
+
+.ptf-slider-controls .ptf-swiper-button-next, .ptf-slider-controls .ptf-swiper-button-prev {
+  transform: scaleX(-1);
+}
+
+.ptf-post--masonry .ptf-post-content .ptf-post-title {
+  padding-right: unset;
+  padding-left: 20px;
+}
+
+/* padding-left: 20px;
+} */
+
+.label.ptf-form-label {
+  left: unset;
+  right: 0;
+}
+
+.ptf-form-label {
+  left: unset;
+  right: 0;
+}
+
+.ptf-offcanvas-menu {
+  right: unset;
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* .ptf-offcanvas-menu */
+
+.ptf-offcanvas-menu__socials .ptf-social-icon+.ptf-social-icon {
+  margin-left: 0;
+  margin-right: 32px;
+}
+
+/* @media screen and (max-width: 782px){html #wpadminbar {
+    height: 46px;
+    min-width: 240px;
+    top: 0px;
+}}
+
+
+	html { margin-top: 0 !important; }
+	* html body { margin-top: 0 !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 0 !important; }
+		* html body { margin-top: 0 !important; }
+	}
+  .admin-bar .ptf-offcanvas-menu {
+    top: 0;
+} */
+
+@media (min-width: 992px) {
+  .offset-lg-3 {
+    margin-left: unset;
+    margin-right: 25%;
+  }
+}
+
+.admin-bar .ptf-navbar--sticky {
+  top: 0;
+}
+
+.ptf-pullquote {
+  padding: 40px 130px 40px 70px;
+}
+
+.ptf-pullquote svg {
+  left: unset;
+  right: 40px;
+}
+
+.ptf-post--single .ptf-post-footer .ptf-post-tags h5, .ptf-post--single .ptf-post-footer .ptf-post-share h5 {
+  margin-left: 6px;
+  margin-right: unset;
+}
+
+.ptf-post--single .ptf-post-footer .ptf-post-share a+a {
+  margin-right: 20px;
+  margin-left: unset;
+}
+
+.ptf-comment-item__inner .ptf-comment-avatar {
+  margin-left: 35px;
+  margin-right: unset;
+}
+
+.ptf-page-comments .ptf-comments ul.children {
+  margin-right: 115px;
+  margin-left: unset
+}
+
+label, h4, .h4, input[type="text"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="number"], textarea, select, .ptf-btn, .comment-reply-link {
+  font-family: unset;
+  font-family: IRANSans !important;
+}
+
+:root {
+  --ptf-primary-font: IRANSans !important;
+}
+
+/* .ptf-page-title__inner h1 {
+  text-align: right;
+} */
+
+.ptf-search-form button {
+  right: unset;
+  left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: IRANSans !important;
+  /* text-align: right; */
+}
+
+.ptf-page-title--style-2 .ptf-page-title__inner h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.ptf-progress-bar__bar span {
+  left: unset;
+  right: 0;
+}
+
+.ptf-default-menu__navigation .sf-menu>li+li {
+  margin-right: 36px;
+  margin-left: unset;
+}
+
+.ptf-navbar .ptf-navbar-inner--center {
+  position: absolute;
+  top: 0;
+  right: 260px !important;
+}
+
+.kirki-separator {
+  letter-spacing: 0 !important;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="number"], textarea, select {
+  text-align: right
+}
+
+.wpcf7-response-output {
+  text-align: right;
+  direction: rtl;
+}
+
+.ptf-timeline-item__text {
+  padding-right: unset;
+  padding-left: 25px;
+}
